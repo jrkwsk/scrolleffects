@@ -4,5 +4,24 @@ body {
     background-image: url(../img/background.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover; 
+    background-size: cover;
+}
+
+img {
+    padding: 10vh;
+    box-sizing: border-box;
+}
+
+img.hidden {
+    transform: translateX(-90vw) scale(0.8);
+    opacity: 0.1;
+}
+
+img.active {
+    transform: translateX(0) scale(1);
+    -webkit-transition: ease-in 0.9s;
+    /* Safari prior 6.1 */
+    transition: ease-in 0.9s;
+    transition-timing-function: cubic-bezier(.22,.68,0,1.51);
+    opacity: 1;
 }
